@@ -27,8 +27,8 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}>
 
-          <p className="font-mono text-sm tracking-widest uppercase mb-4 text-[#500b0b]">
-            Data Scientist & ML Engineer
+          <p className="font-mono text-sm tracking-widest uppercase mb-4 text-[#500b0b]">DATA SCIENTIST & BI ANALYST
+
           </p>
         </motion.div>
 
@@ -36,8 +36,8 @@ const HeroSection = () => {
           className="text-5xl md:text-7xl font-bold mb-6 text-foreground font-serif"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.15 }}>Turning Data Into
-Insights
+          transition={{ duration: 0.8, delay: 0.15 }}>Insights
+
 
           <span className="text-[#510b0b]"> Insights</span>
         </motion.h1>

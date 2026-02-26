@@ -42,14 +42,14 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}>
+          transition={{ duration: 0.6, delay: 0.1 }}>I'm a data scientist passionate about transforming raw data into actionable insights. With a strong foundation in statistics and machine learning, I enjoy tackling complex problems and delivering solutions that drive real business value. When I'm not building models, you'll find me exploring new datasets or contributing to open-source projects.
 
-          I'm a data scientist passionate about transforming raw data into
-          actionable insights. With a strong foundation in statistics, machine
-          learning, and software engineering, I enjoy tackling complex problems
-          and delivering solutions that drive real business value. When I'm not
-          building models, you'll find me exploring new datasets or contributing
-          to open-source projects.
+
+
+
+
+
+
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
