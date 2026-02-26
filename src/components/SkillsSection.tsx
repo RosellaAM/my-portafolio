@@ -41,26 +41,30 @@ const SkillsSection = () => {
           {skillCategories.map((category, i) => (
             <motion.div
               key={category.title}
-              className="bg-card border border-border rounded-lg p-6 hover:border-glow/30 transition-colors border-glow/0"
+              className="bg-card border border-border rounded-lg p-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <h3 className="font-mono text-primary text-sm font-medium mb-4">
+              <h3 className="font-mono text-primary text-sm font-medium mb-5">
                 {category.title}
               </h3>
-              <ul className="space-y-2">
-                {category.skills.map((skill) => (
-                  <li
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill, j) => (
+                  <motion.span
                     key={skill}
-                    className="text-secondary-foreground text-sm flex items-center gap-2"
+                    className="inline-block text-sm px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium border border-primary/20"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: i * 0.1 + j * 0.05 }}
+                    whileHover={{ scale: 1.05, backgroundColor: "hsl(345 40% 35% / 0.2)" }}
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
                     {skill}
-                  </li>
+                  </motion.span>
                 ))}
-              </ul>
+              </div>
             </motion.div>
           ))}
         </div>
