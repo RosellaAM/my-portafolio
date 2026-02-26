@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 
 const links = [
-  { icon: Mail, label: "Email", href: "mailto:hello@example.com" },
-  { icon: Github, label: "GitHub", href: "https://github.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-  { icon: FileText, label: "Resume", href: "#" },
-];
+{ icon: Mail, label: "Email", href: "mailto:hello@example.com" },
+{ icon: Github, label: "GitHub", href: "https://github.com" },
+{ icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
+{ icon: FileText, label: "Resume", href: "#" }];
+
 
 const ContactSection = () => {
   return (
@@ -16,12 +16,12 @@ const ContactSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+          transition={{ duration: 0.6 }}>
+
           <p className="font-mono text-primary text-sm tracking-widest uppercase mb-2">
             Get In Touch
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#510b0b] font-serif">
             Let's Work Together
           </h2>
           <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
@@ -35,20 +35,20 @@ const ContactSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          {links.map(({ icon: Icon, label, href }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-border px-5 py-3 rounded-lg text-sm text-secondary-foreground hover:border-primary hover:text-primary transition-colors"
-            >
+          transition={{ duration: 0.6, delay: 0.2 }}>
+
+          {links.map(({ icon: Icon, label, href }) =>
+          <a
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border border-border px-5 py-3 rounded-lg text-sm hover:border-primary transition-colors text-[#510b0b]">
+
               <Icon className="w-4 h-4" />
               {label}
             </a>
-          ))}
+          )}
         </motion.div>
 
         <motion.p
@@ -56,13 +56,13 @@ const ContactSection = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
+          transition={{ duration: 0.6, delay: 0.4 }}>
+
           © {new Date().getFullYear()} · Built with passion for data
         </motion.p>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ContactSection;

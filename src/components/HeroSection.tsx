@@ -12,8 +12,8 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
+          className="mb-8">
+
           <Avatar className="w-32 h-32 mx-auto border-4 border-primary/20 shadow-lg">
             <AvatarImage src="" alt="Profile photo" />
             <AvatarFallback className="text-3xl font-bold bg-primary/10 text-primary">
@@ -25,29 +25,29 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <p className="font-mono text-primary text-sm tracking-widest uppercase mb-4">
+          transition={{ duration: 0.8 }}>
+
+          <p className="font-mono text-sm tracking-widest uppercase mb-4 text-[#500b0b]">
             Data Scientist & ML Engineer
           </p>
         </motion.div>
 
         <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-6 text-foreground"
+          className="text-5xl md:text-7xl font-bold mb-6 text-foreground font-serif"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.15 }}
-        >
-          Turning Data Into
-          <span className="text-primary"> Insights</span>
+          transition={{ duration: 0.8, delay: 0.15 }}>Turning Data Into
+Insights
+
+          <span className="text-[#510b0b]"> Insights</span>
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed text-muted-foreground"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-        >
+          transition={{ duration: 0.8, delay: 0.3 }}>
+
           I build machine learning models, analyze complex datasets, and create
           data-driven solutions that make an impact. Passionate about uncovering
           patterns hidden in data.
@@ -57,12 +57,12 @@ const HeroSection = () => {
           className="flex items-center justify-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.45 }}
-        >
+          transition={{ duration: 0.8, delay: 0.45 }}>
+
           <a
             href="#projects"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
-          >
+            className="inline-flex items-center gap-2 text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity bg-[#510b0b]">
+
             View Projects
             <ArrowDown className="w-4 h-4" />
           </a>
@@ -71,7 +71,7 @@ const HeroSection = () => {
               <Github className="w-5 h-5" />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-              <Linkedin className="w-5 h-5" />
+              <Linkedin className="w-5 h-5 border-red-950" />
             </a>
             <a href="mailto:hello@example.com" className="text-muted-foreground hover:text-primary transition-colors">
               <Mail className="w-5 h-5" />
@@ -81,8 +81,8 @@ const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
