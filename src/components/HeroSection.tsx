@@ -1,14 +1,27 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Grid background */}
-      <div className="absolute inset-0 bg-grid opacity-40" />
       <div className="absolute inset-0 bg-gradient-radial" />
 
       <div className="relative z-10 container max-w-4xl mx-auto px-6 text-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="mb-8"
+        >
+          <Avatar className="w-32 h-32 mx-auto border-4 border-primary/20 shadow-lg">
+            <AvatarImage src="" alt="Profile photo" />
+            <AvatarFallback className="text-3xl font-bold bg-primary/10 text-primary">
+              DS
+            </AvatarFallback>
+          </Avatar>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -20,7 +33,7 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-6 text-glow text-foreground"
+          className="text-5xl md:text-7xl font-bold mb-6 text-foreground"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
@@ -35,8 +48,8 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          I build machine learning models, analyze complex datasets, and create 
-          data-driven solutions that make an impact. Passionate about uncovering 
+          I build machine learning models, analyze complex datasets, and create
+          data-driven solutions that make an impact. Passionate about uncovering
           patterns hidden in data.
         </motion.p>
 
@@ -67,7 +80,6 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
