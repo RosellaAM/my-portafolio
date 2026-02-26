@@ -42,8 +42,8 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}>I'm a data scientist passionate about transforming raw data into actionable insights. With a strong foundation in statistics and machine learning, I enjoy tackling complex problems and delivering solutions that drive real business value. When I'm not building models, you'll find me exploring new datasets or contributing to open-source projects.
-
+          transition={{ duration: 0.6, delay: 0.1 }}>I'm a results-driven Data Professional with hands on experience in data science and analytics, from developing end-to-end machine learning pipelines to extracting actionable insights through exploratory analysis and data visualization. I combine technical expertise in Python, SQL, and predictive modeling with a strategic mindset to transform complex data into business solutions. 
+I specialize in building interactive dashboards and telling compelling data stories that bridge the gap between technical findings and strategic decision-making. My goal is to deliver immediate, measurable value by leveraging advanced analytics and data science to drive impact from day one.
 
 
 
