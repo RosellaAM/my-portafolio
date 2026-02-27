@@ -27,7 +27,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}>
 
-          <p className="font-mono text-sm tracking-widest uppercase mb-4 text-primary">DATA SCIENTIST & BI ANALYST
+          <p className="font-mono text-sm tracking-widest uppercase mb-4 text-secondary-foreground">DATA SCIENTIST & BI ANALYST
           </p>
         </motion.div>
 
