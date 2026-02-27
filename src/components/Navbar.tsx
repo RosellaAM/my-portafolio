@@ -20,7 +20,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}>
 
       <div className="container max-w-5xl mx-auto px-6 flex items-center justify-between h-14">
-        <a href="#" className="font-mono font-bold text-sm tracking-wider text-[#750a0a]">
+        <a href="#" className="font-mono font-bold text-sm tracking-wider text-primary">
           ~/portfolio
         </a>
 
@@ -30,7 +30,7 @@ const Navbar = () => {
           <a
             key={item.label}
             href={item.href}
-            className="text-sm transition-colors text-[#750a0a]">
+            className="text-sm transition-colors text-foreground hover:text-primary">
 
               {item.label}
             </a>
