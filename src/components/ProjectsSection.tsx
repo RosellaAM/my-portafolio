@@ -128,7 +128,7 @@ const ProjectsSection = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 
                   {/* Result badge overlay */}
-                  <div className="absolute bottom-3 left-3 flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-mono font-medium bg-transparent border-primary shadow-none border text-primary">
+                  <div className="absolute bottom-3 left-3 flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-mono font-medium border-primary shadow-none border text-primary bg-secondary">
                     <TrendingUp className="w-3.5 h-3.5" />
                     {project.result}
                   </div>
