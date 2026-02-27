@@ -21,7 +21,7 @@ const ContactSection = () => {
           <p className="font-mono text-primary text-sm tracking-widest uppercase mb-2">
             Get In Touch
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#510b0b] font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground font-serif">
             Let's Work Together
           </h2>
           <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
@@ -43,7 +43,7 @@ const ContactSection = () => {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-border px-5 py-3 rounded-lg text-sm hover:border-primary transition-colors text-[#510b0b]">
+            className="inline-flex items-center gap-2 border border-border px-5 py-3 rounded-lg text-sm hover:border-primary transition-colors text-foreground">
 
               <Icon className="w-4 h-4" />
               {label}

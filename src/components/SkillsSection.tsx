@@ -32,7 +32,7 @@ const SkillsSection = () => {
           <p className="font-mono text-primary text-sm tracking-widest uppercase mb-2">
             Tech Stack
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 font-serif text-[#510b0b]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 font-serif text-foreground">
             Skills & Tools
           </h2>
         </motion.div>
@@ -47,7 +47,7 @@ const SkillsSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}>
 
-              <h3 className="font-mono text-sm font-medium mb-5 text-[#510b0b]">
+              <h3 className="font-mono text-sm font-medium mb-5 text-primary">
                 {category.title}
               </h3>
               <div className="flex flex-wrap gap-2">
