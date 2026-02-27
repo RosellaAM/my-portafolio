@@ -86,7 +86,7 @@ const ProjectsSection = () => {
                 {/* Content */}
                 <div className="p-6 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-secondary-foreground">
+                    <h3 className="text-xl font-semibold mb-2 text-secondary-foreground hover:text-primary transition-colors cursor-pointer">
                       {project.title}
                     </h3>
                     <p className="text-sm text-muted-foreground mb-4 leading-relaxed">

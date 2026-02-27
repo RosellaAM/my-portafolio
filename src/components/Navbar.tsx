@@ -20,9 +20,8 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}>
 
       <div className="container max-w-5xl mx-auto px-6 flex items-center justify-between h-14">
-        <a href="#" className="font-mono font-bold text-sm tracking-wider text-primary">
-          ~/portfolio
-        </a>
+        <span className="font-mono font-bold text-sm tracking-wider text-primary">
+        </span>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-6">
