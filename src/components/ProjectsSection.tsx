@@ -4,47 +4,47 @@ import { ExternalLink, Github, TrendingUp, ChevronLeft, ChevronRight } from "luc
 import { Button } from "@/components/ui/button";
 
 const projects = [
-  {
-    title: "Customer Churn Prediction",
-    description:
-      "Built an ensemble ML model achieving 94% accuracy predicting customer churn using gradient boosting and feature engineering on 50K+ records.",
-    result: "94% accuracy on 50K+ records",
-    tags: ["Python", "XGBoost", "Pandas", "Scikit-learn"],
-    image: "/placeholder.svg",
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "NLP Sentiment Analyzer",
-    description:
-      "Fine-tuned a transformer model for real-time sentiment analysis on product reviews with 91% F1-score, deployed via REST API.",
-    result: "91% F1-score, real-time inference",
-    tags: ["PyTorch", "Transformers", "FastAPI", "Docker"],
-    image: "/placeholder.svg",
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Sales Forecasting Dashboard",
-    description:
-      "Time-series forecasting pipeline with ARIMA & Prophet models, visualized through an interactive dashboard for business stakeholders.",
-    result: "30% improvement in forecast accuracy",
-    tags: ["Python", "Prophet", "Plotly", "SQL"],
-    image: "/placeholder.svg",
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Image Classification Pipeline",
-    description:
-      "End-to-end deep learning pipeline for medical image classification using CNNs with data augmentation and transfer learning.",
-    result: "97% classification accuracy",
-    tags: ["TensorFlow", "Keras", "OpenCV", "AWS"],
-    image: "/placeholder.svg",
-    github: "#",
-    demo: "#",
-  },
-];
+{
+  title: "Customer Churn Prediction",
+  description:
+  "Built an ensemble ML model achieving 94% accuracy predicting customer churn using gradient boosting and feature engineering on 50K+ records.",
+  result: "94% accuracy on 50K+ records",
+  tags: ["Python", "XGBoost", "Pandas", "Scikit-learn"],
+  image: "/placeholder.svg",
+  github: "#",
+  demo: "#"
+},
+{
+  title: "NLP Sentiment Analyzer",
+  description:
+  "Fine-tuned a transformer model for real-time sentiment analysis on product reviews with 91% F1-score, deployed via REST API.",
+  result: "91% F1-score, real-time inference",
+  tags: ["PyTorch", "Transformers", "FastAPI", "Docker"],
+  image: "/placeholder.svg",
+  github: "#",
+  demo: "#"
+},
+{
+  title: "Sales Forecasting Dashboard",
+  description:
+  "Time-series forecasting pipeline with ARIMA & Prophet models, visualized through an interactive dashboard for business stakeholders.",
+  result: "30% improvement in forecast accuracy",
+  tags: ["Python", "Prophet", "Plotly", "SQL"],
+  image: "/placeholder.svg",
+  github: "#",
+  demo: "#"
+},
+{
+  title: "Image Classification Pipeline",
+  description:
+  "End-to-end deep learning pipeline for medical image classification using CNNs with data augmentation and transfer learning.",
+  result: "97% classification accuracy",
+  tags: ["TensorFlow", "Keras", "OpenCV", "AWS"],
+  image: "/placeholder.svg",
+  github: "#",
+  demo: "#"
+}];
+
 
 const ProjectsSection = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -73,13 +73,13 @@ const ProjectsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex items-end justify-between mb-12"
-        >
+          className="flex items-end justify-between mb-12">
+
           <div>
             <p className="font-mono text-primary text-sm tracking-widest uppercase mb-2">
               Portfolio
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground font-serif">
               Featured Projects
             </h2>
           </div>
@@ -89,15 +89,15 @@ const ProjectsSection = () => {
             <button
               onClick={() => scroll("left")}
               className="p-2 rounded-full border border-border hover:border-primary hover:text-primary transition-colors bg-card"
-              aria-label="Previous project"
-            >
+              aria-label="Previous project">
+
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={() => scroll("right")}
               className="p-2 rounded-full border border-border hover:border-primary hover:text-primary transition-colors bg-card"
-              aria-label="Next project"
-            >
+              aria-label="Next project">
+
               <ChevronRight className="w-5 h-5" />
             </button>
           </div>
@@ -108,25 +108,25 @@ const ProjectsSection = () => {
           ref={scrollRef}
           onScroll={handleScroll}
           className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          {projects.map((project, i) => (
-            <motion.div
-              key={project.title}
-              className="snap-start shrink-0 w-[85vw] md:w-[420px] group"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-            >
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+
+          {projects.map((project, i) =>
+          <motion.div
+            key={project.title}
+            className="snap-start shrink-0 w-[85vw] md:w-[420px] group"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: i * 0.1 }}>
+
               <div className="bg-card border border-border rounded-xl overflow-hidden h-full flex flex-col hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
                 {/* Image */}
                 <div className="aspect-video bg-muted overflow-hidden relative">
                   <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+
                   {/* Result badge overlay */}
                   <div className="absolute bottom-3 left-3 flex items-center gap-1.5 bg-primary text-primary-foreground rounded-full px-3 py-1.5 text-xs font-mono font-medium shadow-md">
                     <TrendingUp className="w-3.5 h-3.5" />
@@ -145,14 +145,14 @@ const ProjectsSection = () => {
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-1.5 mb-5">
-                    {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="font-mono text-[11px] px-2 py-0.5 rounded-full bg-secondary text-primary border border-border"
-                      >
+                    {project.tags.map((tag) =>
+                  <span
+                    key={tag}
+                    className="font-mono text-[11px] px-2 py-0.5 rounded-full bg-secondary text-primary border border-border">
+
                         {tag}
                       </span>
-                    ))}
+                  )}
                   </div>
 
                   {/* Buttons */}
@@ -173,31 +173,31 @@ const ProjectsSection = () => {
                 </div>
               </div>
             </motion.div>
-          ))}
+          )}
         </div>
 
         {/* Dot indicators */}
         <div className="flex justify-center gap-2 mt-6">
-          {projects.map((_, i) => (
-            <button
-              key={i}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                i === activeIndex
-                  ? "bg-primary w-6"
-                  : "bg-border hover:bg-muted-foreground"
-              }`}
-              onClick={() => {
-                if (!scrollRef.current) return;
-                const cardWidth = (scrollRef.current.children[0]?.clientWidth ?? 400) + 24;
-                scrollRef.current.scrollTo({ left: cardWidth * i, behavior: "smooth" });
-              }}
-              aria-label={`Go to project ${i + 1}`}
-            />
-          ))}
+          {projects.map((_, i) =>
+          <button
+            key={i}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+            i === activeIndex ?
+            "bg-primary w-6" :
+            "bg-border hover:bg-muted-foreground"}`
+            }
+            onClick={() => {
+              if (!scrollRef.current) return;
+              const cardWidth = (scrollRef.current.children[0]?.clientWidth ?? 400) + 24;
+              scrollRef.current.scrollTo({ left: cardWidth * i, behavior: "smooth" });
+            }}
+            aria-label={`Go to project ${i + 1}`} />
+
+          )}
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ProjectsSection;
