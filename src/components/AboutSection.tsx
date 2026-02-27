@@ -1,22 +1,4 @@
 import { motion } from "framer-motion";
-import { BookOpen, Briefcase, GraduationCap } from "lucide-react";
-
-const highlights = [
-{
-  icon: Briefcase,
-  title: "Experience",
-  text: "3+ years working with data-driven teams to build ML solutions and analytics pipelines."
-},
-{
-  icon: GraduationCap,
-  title: "Education",
-  text: "M.S. in Data Science with a focus on statistical modeling and machine learning."
-},
-{
-  icon: BookOpen,
-  title: "Research",
-  text: "Published work in predictive analytics and natural language processing applications."
-}];
 
 
 const AboutSection = () => {
@@ -52,24 +34,6 @@ I specialize in building interactive dashboards and telling compelling data stor
 
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {highlights.map((item, i) =>
-          <motion.div
-            key={item.title}
-            className="bg-card border border-border rounded-lg p-6"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}>
-
-              <item.icon className="w-6 h-6 text-primary mb-4" />
-              <h3 className="font-semibold mb-2 font-serif text-secondary-foreground">{item.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {item.text}
-              </p>
-            </motion.div>
-          )}
-        </div>
       </div>
     </section>);
 
