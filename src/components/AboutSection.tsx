@@ -14,7 +14,7 @@ const AboutSection = () => {
           <p className="font-mono text-primary text-sm tracking-widest uppercase mb-2">
             Who I Am
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#510b0b] font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground font-serif">
             About Me
           </h2>
         </motion.div>
