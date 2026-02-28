@@ -43,6 +43,26 @@ const projects = [
   image: "/placeholder.svg",
   github: "#",
   demo: "#"
+},
+{
+  title: "Anomaly Detection System",
+  description:
+  "Real-time anomaly detection engine for IoT sensor data using autoencoders and statistical methods, reducing false positives by 60%.",
+  result: "60% fewer false positives",
+  tags: ["Python", "Keras", "Pandas", "SQL"],
+  image: "/placeholder.svg",
+  github: "#",
+  demo: "#"
+},
+{
+  title: "Recommendation Engine",
+  description:
+  "Collaborative filtering recommendation system for e-commerce, combining matrix factorization with deep learning for personalized suggestions.",
+  result: "25% increase in engagement",
+  tags: ["Python", "Scikit-learn", "NumPy", "FastAPI"],
+  image: "/placeholder.svg",
+  github: "#",
+  demo: "#"
 }];
 
 
