@@ -16,6 +16,10 @@ const skillCategories = [
 {
   title: "Visualization",
   skills: ["Matplotlib", "Plotly", "Seaborn", "PowerBI"]
+},
+{
+  title: "Deployment",
+  skills: ["Git", "Joblib", "Google Drive API"]
 }];
 
 
