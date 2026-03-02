@@ -33,12 +33,17 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="mb-8"
+          className="mb-10"
         >
-          <Avatar className="w-32 h-32 mx-auto border-4 border-primary/20 shadow-lg">
-            <AvatarImage src="" alt="Profile photo" />
-            <AvatarFallback className="text-3xl font-bold bg-primary/10 text-primary">DS</AvatarFallback>
-          </Avatar>
+          <div className="relative w-40 h-40 md:w-48 md:h-48 mx-auto">
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary/60 via-primary/20 to-transparent blur-sm" />
+            <Avatar className="w-full h-full relative border-2 border-primary/30 shadow-2xl shadow-primary/10">
+              <AvatarImage src="/profile-photo.jpg" alt="Rosella Astrain" className="object-cover" />
+              <AvatarFallback className="text-4xl font-bold bg-primary/5 text-primary">
+                <Mail className="w-10 h-10 text-primary/40" />
+              </AvatarFallback>
+            </Avatar>
+          </div>
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
