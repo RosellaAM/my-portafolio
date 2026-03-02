@@ -41,54 +41,81 @@ const translations: Record<string, Record<Language, string>> = {
   "skills.visualization": { en: "Visualization", es: "Visualización" },
   "skills.deployment": { en: "Deployment", es: "Despliegue" },
 
-  // Projects
+  // Projects Section
   "projects.subtitle": { en: "Portfolio", es: "Portafolio" },
   "projects.title": { en: "Featured Projects", es: "Proyectos Destacados" },
   "projects.github": { en: "GitHub", es: "GitHub" },
   "projects.demo": { en: "Live Demo", es: "Demo en Vivo" },
 
-  // Project titles & descriptions
-  "project.1.title": { en: "Customer Churn Prediction", es: "Predicción de Abandono de Clientes" },
-  "project.1.description": {
-    en: "Built an ensemble ML model achieving 94% accuracy predicting customer churn using gradient boosting and feature engineering on 50K+ records.",
-    es: "Construí un modelo ML ensemble alcanzando 94% de precisión prediciendo abandono de clientes usando gradient boosting e ingeniería de características en 50K+ registros.",
+  // MEGALINE PROJECT
+  "project.megaline.title": { 
+    en: "Megaline Plan Recommendation System", 
+    es: "Sistema de Recomendación de Planes Megaline" 
   },
-  "project.1.result": { en: "94% accuracy on 50K+ records", es: "94% precisión en 50K+ registros" },
+  "project.megaline.description": {
+    en: "Classification system that analyzes customer usage patterns to recommend optimal mobile plans, achieving 88% accuracy. Helps customers find the right plan based on their actual behavior.",
+    es: "Sistema de clasificación que analiza patrones de uso de clientes para recomendar planes móviles óptimos, alcanzando 88% de precisión. Ayuda a los clientes a encontrar el plan adecuado según su comportamiento real.",
+  },
+  "project.megaline.result": { 
+    en: "88% accuracy on 2,500+ clients", 
+    es: "88% precisión en 2,500+ clientes" 
+  },
 
-  "project.2.title": { en: "NLP Sentiment Analyzer", es: "Analizador de Sentimientos NLP" },
-  "project.2.description": {
-    en: "Fine-tuned a transformer model for real-time sentiment analysis on product reviews with 91% F1-score, deployed via REST API.",
-    es: "Afiné un modelo transformer para análisis de sentimientos en tiempo real en reseñas de productos con 91% F1-score, desplegado via API REST.",
+  // BANK CHURN PROJECT
+  "project.bank-churn.title": { 
+    en: "Customer Churn Prediction - Beta Bank", 
+    es: "Predicción de Abandono - Beta Bank" 
   },
-  "project.2.result": { en: "91% F1-score, real-time inference", es: "91% F1-score, inferencia en tiempo real" },
+  "project.bank-churn.description": {
+    en: "Machine learning model predicting customer churn with 87% AUC-ROC. Enables proactive retention strategies and optimized resource allocation.",
+    es: "Modelo de machine learning que predice abandono de clientes con 87% AUC-ROC. Permite estrategias proactivas de retención y asignación optimizada de recursos.",
+  },
+  "project.bank-churn.result": { 
+    en: "87% AUC-ROC on 10K+ customers", 
+    es: "87% AUC-ROC en 10K+ clientes" 
+  },
 
-  "project.3.title": { en: "Sales Forecasting Dashboard", es: "Dashboard de Pronóstico de Ventas" },
-  "project.3.description": {
-    en: "Time-series forecasting pipeline with ARIMA & Prophet models, visualized through an interactive dashboard for business stakeholders.",
-    es: "Pipeline de pronóstico de series temporales con modelos ARIMA y Prophet, visualizado a través de un dashboard interactivo para stakeholders del negocio.",
+  // GOLD RECOVERY PROJECT
+  "project.gold-recovery.title": { 
+    en: "Gold Recovery Prediction Model", 
+    es: "Modelo de Predicción de Recuperación de Oro" 
   },
-  "project.3.result": { en: "30% improvement in forecast accuracy", es: "30% mejora en precisión de pronóstico" },
+  "project.gold-recovery.description": {
+    en: "Industrial ML solution predicting gold recovery rates with 12.82% sMAPE. Optimizes mineral processing through predictive modeling of purification stages.",
+    es: "Solución ML industrial que predice tasas de recuperación de oro con 12.82% sMAPE. Optimiza el procesamiento mineral mediante modelado predictivo de etapas de purificación.",
+  },
+  "project.gold-recovery.result": { 
+    en: "12.82% sMAPE on 50K+ mining records", 
+    es: "12.82% sMAPE en 50K+ registros mineros" 
+  },
 
-  "project.4.title": { en: "Image Classification Pipeline", es: "Pipeline de Clasificación de Imágenes" },
-  "project.4.description": {
-    en: "End-to-end deep learning pipeline for medical image classification using CNNs with data augmentation and transfer learning.",
-    es: "Pipeline de deep learning de extremo a extremo para clasificación de imágenes médicas usando CNNs con aumento de datos y transfer learning.",
+  // SENTIMENT ANALYSIS PROJECT
+  "project.sentiment.title": { 
+    en: "Film Review Sentiment Analysis", 
+    es: "Análisis de Sentimientos de Reseñas de Cine" 
   },
-  "project.4.result": { en: "97% classification accuracy", es: "97% precisión de clasificación" },
+  "project.sentiment.description": {
+    en: "NLP system detecting negative movie reviews with 0.87 F1-score. Deployed for automated content filtering and community moderation.",
+    es: "Sistema NLP que detecta reseñas negativas de películas con 0.87 F1-score. Desplegado para filtrado automático y moderación comunitaria.",
+  },
+  "project.sentiment.result": { 
+    en: "87% F1-score on 50K+ IMDB reviews", 
+    es: "87% F1-score en 50K+ reseñas de IMDB" 
+  },
 
-  "project.5.title": { en: "Anomaly Detection System", es: "Sistema de Detección de Anomalías" },
-  "project.5.description": {
-    en: "Real-time anomaly detection engine for IoT sensor data using autoencoders and statistical methods, reducing false positives by 60%.",
-    es: "Motor de detección de anomalías en tiempo real para datos de sensores IoT usando autoencoders y métodos estadísticos, reduciendo falsos positivos en 60%.",
+  // VEHICLE EXPLORER PROJECT
+  "project.vehicle-explorer.title": { 
+    en: "Vehicle Data Explorer", 
+    es: "Explorador de Datos de Vehículos" 
   },
-  "project.5.result": { en: "60% fewer false positives", es: "60% menos falsos positivos" },
-
-  "project.6.title": { en: "Recommendation Engine", es: "Motor de Recomendaciones" },
-  "project.6.description": {
-    en: "Collaborative filtering recommendation system for e-commerce, combining matrix factorization with deep learning for personalized suggestions.",
-    es: "Sistema de recomendación por filtrado colaborativo para e-commerce, combinando factorización de matrices con deep learning para sugerencias personalizadas.",
+  "project.vehicle-explorer.description": {
+    en: "Interactive web application transforming complex vehicle data into intuitive visualizations. Deployed on Streamlit Cloud with Plotly dashboards.",
+    es: "Aplicación web interactiva que transforma datos complejos de vehículos en visualizaciones intuitivas. Desplegado en Streamlit Cloud con dashboards de Plotly.",
   },
-  "project.6.result": { en: "25% increase in engagement", es: "25% aumento en engagement" },
+  "project.vehicle-explorer.result": { 
+    en: "", 
+    es: "" 
+  },
 
   // Contact
   "contact.subtitle": { en: "Get In Touch", es: "Contáctame" },
