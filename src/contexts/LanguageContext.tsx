@@ -20,7 +20,7 @@ const translations: Record<string, Record<Language, string>> = {
   "hero.role": { en: "DATA SCIENTIST & BI ANALYST", es: "CIENTÍFICA DE DATOS & ANALISTA BI" },
   "hero.description": {
     en: "I build machine learning models, analyze complex datasets, and create data-driven solutions that make an impact. Passionate about uncovering patterns hidden in data.",
-    es: "Construyo modelos de machine learning, analizo conjuntos de datos complejos y creo soluciones basadas en datos que generan impacto. Apasionada por descubrir patrones ocultos en los datos.",
+    es: "Desarrollo modelos de machine learning, analizo datos complejos y creo soluciones basadas en datos que generan impacto real. Apasionada por descubrir patrones ocultos en la información y convertirlos en oportunidades de negocio.",
   },
   "hero.viewProjects": { en: "View Projects", es: "Ver Proyectos" },
 
@@ -29,8 +29,7 @@ const translations: Record<string, Record<Language, string>> = {
   "about.title": { en: "About Me", es: "Sobre Mí" },
   "about.description": {
     en: "I'm a results-driven Data Professional with hands on experience in data science and analytics, from developing end-to-end machine learning pipelines to extracting actionable insights through exploratory analysis and data visualization. I combine technical expertise in Python, SQL, and predictive modeling with a strategic mindset to transform complex data into business solutions. I specialize in building interactive dashboards and telling compelling data stories that bridge the gap between technical findings and strategic decision-making. My goal is to deliver immediate, measurable value by leveraging advanced analytics and data science to drive impact from day one.",
-    es: "Soy una profesional de datos orientada a resultados con experiencia práctica en ciencia de datos y analítica, desde el desarrollo de pipelines de machine learning de extremo a extremo hasta la extracción de insights accionables mediante análisis exploratorio y visualización de datos. Combino experiencia técnica en Python, SQL y modelado predictivo con una mentalidad estratégica para transformar datos complejos en soluciones de negocio. Me especializo en construir dashboards interactivos y contar historias de datos convincentes que cierran la brecha entre hallazgos técnicos y toma de decisiones estratégicas. Mi objetivo es entregar valor inmediato y medible aprovechando analítica avanzada y ciencia de datos para generar impacto desde el primer día.",
-  },
+    es: "Soy una profesional de datos orientada a resultados con experiencia práctica en ciencia de datos y analítica. Mi trabajo abarca desde el desarrollo de pipelines completos de machine learning hasta la extracción de insights accionables mediante análisis exploratorio y visualización de datos. Combino conocimientos técnicos en Python, SQL y modelado predictivo con una visión estratégica para transformar datos complejos en soluciones de negocio concretas. Me especializo en crear dashboards interactivos y contar historias con datos que conectan los hallazgos técnicos con la toma de decisiones estratégicas. Mi objetivo es generar valor inmediato y medible desde el primer día, aplicando analítica avanzada y ciencia de datos para impulsar resultados que realmente importan al negocio."
 
   // Skills
   "skills.subtitle": { en: "Tech Stack", es: "Stack Tecnológico" },
