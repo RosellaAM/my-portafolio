@@ -17,13 +17,13 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="fixed top-4 left-1/2 -translate-x-1/2 z-50"
+      className="fixed top-4 right-4 z-50"
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
       {/* Desktop floating pill */}
-      <div className="hidden md:flex items-center gap-1 px-2 py-2 rounded-full bg-card/70 backdrop-blur-xl border border-border/60 shadow-lg shadow-primary/5">
+      <div className="hidden md:flex items-center gap-1 px-2 py-2 rounded-full bg-card/70 backdrop-blur-xl border border-border/60 shadow-[0_0_20px_rgba(0,255,255,0.3)] hover:shadow-[0_0_30px_rgba(0,255,255,0.5)] transition-shadow duration-300">
         {navItems.map((item) => (
           <a
             key={item.href}
@@ -76,7 +76,7 @@ const Navbar = () => {
       {/* Mobile floating button + menu */}
       <div className="md:hidden">
         <button
-          className="flex items-center justify-center w-11 h-11 rounded-full bg-card/70 backdrop-blur-xl border border-border/60 shadow-lg shadow-primary/5 text-muted-foreground"
+          className="flex items-center justify-center w-11 h-11 rounded-full bg-card/70 backdrop-blur-xl border border-border/60 shadow-[0_0_20px_rgba(0,255,255,0.3)] hover:shadow-[0_0_30px_rgba(0,255,255,0.5)] transition-shadow duration-300 text-muted-foreground"
           onClick={() => setOpen(!open)}
         >
           {open ? <X className="w-4.5 h-4.5" /> : <Menu className="w-4.5 h-4.5" />}
