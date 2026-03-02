@@ -26,8 +26,7 @@ const HeroSection = () => {
           <div className="relative w-40 h-40 md:w-48 md:h-48 mx-auto">
             <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary/60 via-primary/20 to-transparent blur-sm" />
             <Avatar className="w-full h-full relative border-2 border-primary/30 shadow-2xl shadow-primary/10">
-              {/* CHANGE THIS LINE - update with your photo path */}
-              <AvatarImage src="/profile/rosella-profile.jpg" alt="Rosella Astrain" className="object-cover" />
+              <AvatarImage src="/profile/rosella-profile.png" alt="Rosella Astrain" className="object-cover" />
               
               {/* This shows if image fails to load */}
               <AvatarFallback className="text-4xl font-bold bg-primary/5 text-primary">
