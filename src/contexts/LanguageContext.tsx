@@ -29,7 +29,8 @@ const translations: Record<string, Record<Language, string>> = {
   "about.title": { en: "About Me", es: "Sobre Mí" },
   "about.description": {
     en: "I'm a results-driven Data Professional with hands on experience in data science and analytics, from developing end-to-end machine learning pipelines to extracting actionable insights through exploratory analysis and data visualization. I combine technical expertise in Python, SQL, and predictive modeling with a strategic mindset to transform complex data into business solutions. I specialize in building interactive dashboards and telling compelling data stories that bridge the gap between technical findings and strategic decision-making. My goal is to deliver immediate, measurable value by leveraging advanced analytics and data science to drive impact from day one.",
-    es: "Soy una profesional de datos orientada a resultados con experiencia práctica en ciencia de datos y analítica. Mi trabajo abarca desde el desarrollo de pipelines completos de machine learning hasta la extracción de insights accionables mediante análisis exploratorio y visualización de datos. Combino conocimientos técnicos en Python, SQL y modelado predictivo con una visión estratégica para transformar datos complejos en soluciones de negocio concretas. Me especializo en crear dashboards interactivos y contar historias con datos que conectan los hallazgos técnicos con la toma de decisiones estratégicas. Mi objetivo es generar valor inmediato y medible desde el primer día, aplicando analítica avanzada y ciencia de datos para impulsar resultados que realmente importan al negocio."
+    es: "Soy una profesional de datos orientada a resultados con experiencia práctica en ciencia de datos y analítica. Mi trabajo abarca desde el desarrollo de pipelines completos de machine learning hasta la extracción de insights accionables mediante análisis exploratorio y visualización de datos. Combino conocimientos técnicos en Python, SQL y modelado predictivo con una visión estratégica para transformar datos complejos en soluciones de negocio concretas. Me especializo en crear dashboards interactivos y contar historias con datos que conectan los hallazgos técnicos con la toma de decisiones estratégicas. Mi objetivo es generar valor inmediato y medible desde el primer día, aplicando analítica avanzada y ciencia de datos para impulsar resultados que realmente importan al negocio.",
+  },
 
   // Skills
   "skills.subtitle": { en: "Tech Stack", es: "Stack Tecnológico" },
@@ -146,6 +147,8 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
-  if (!context) throw new Error("useLanguage must be used within LanguageProvider");
+  if (!context) {
+    throw new Error("useLanguage must be used within a LanguageProvider");
+  }
   return context;
 };
