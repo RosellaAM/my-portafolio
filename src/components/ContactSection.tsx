@@ -1,51 +1,31 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import TiltCard from "./TiltCard";
-
-const links = [
-  { icon: Mail, label: "Email", href: "mailto:hello@example.com" },
-  { icon: Github, label: "GitHub", href: "https://github.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-  { icon: FileText, label: "Resume", href: "#" },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ContactSection = () => {
+  const { t } = useLanguage();
+
+  const links = [
+    { icon: Mail, label: t("contact.email"), href: "mailto:hello@example.com" },
+    { icon: Github, label: "GitHub", href: "https://github.com" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
+    { icon: FileText, label: t("contact.resume"), href: "#" },
+  ];
+
   return (
     <section className="py-24 relative" id="contact">
       <div className="container max-w-3xl mx-auto px-6 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <p className="font-mono text-primary text-sm tracking-widest uppercase mb-2">
-            Get In Touch
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground font-serif">
-            Let's Work Together
-          </h2>
-          <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
-            Interested in collaborating on a data science project or have a role
-            that fits? I'd love to hear from you.
-          </p>
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+          <p className="font-mono text-primary text-sm tracking-widest uppercase mb-2">{t("contact.subtitle")}</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground font-serif">{t("contact.title")}</h2>
+          <p className="text-muted-foreground mb-10 max-w-lg mx-auto">{t("contact.description")}</p>
         </motion.div>
 
-        <motion.div
-          className="flex items-center justify-center gap-4 flex-wrap"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
+        <motion.div className="flex items-center justify-center gap-4 flex-wrap" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
           {links.map(({ icon: Icon, label, href }) => (
             <TiltCard key={label} className="inline-block" intensity={12}>
-              <a
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border border-border px-5 py-3 rounded-lg text-sm hover:border-primary hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 text-foreground bg-card"
-              >
+              <a href={href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border px-5 py-3 rounded-lg text-sm hover:border-primary hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 text-foreground bg-card">
                 <Icon className="w-4 h-4" />
                 {label}
               </a>
@@ -53,14 +33,8 @@ const ContactSection = () => {
           ))}
         </motion.div>
 
-        <motion.p
-          className="mt-16 text-xs text-muted-foreground font-mono"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          © {new Date().getFullYear()} · Built with passion for data
+        <motion.p className="mt-16 text-xs text-muted-foreground font-mono" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.4 }}>
+          © {new Date().getFullYear()} · {t("contact.footer")}
         </motion.p>
       </div>
     </section>
