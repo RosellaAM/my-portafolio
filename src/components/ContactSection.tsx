@@ -11,7 +11,7 @@ const ContactSection = () => {
       icon: Mail, 
       label: t("contact.email"), 
       href: "mailto:rosella.astrain@gmail.com",
-      external: false // Opens email client
+      external: false
     },
     { 
       icon: Github, 
@@ -29,7 +29,7 @@ const ContactSection = () => {
       icon: FileText, 
       label: t("contact.resume"), 
       href: language === "en" ? "/cv/Rosella_Astrain_CV_English.pdf" : "/cv/Rosella_Astrain_CV_Spanish.pdf",
-      external: false // Opens PDF in browser
+      external: false
     },
   ];
 
