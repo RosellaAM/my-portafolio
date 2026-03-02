@@ -4,13 +4,33 @@ import TiltCard from "./TiltCard";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const ContactSection = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const links = [
-    { icon: Mail, label: t("contact.email"), href: "mailto:hello@example.com" },
-    { icon: Github, label: "GitHub", href: "https://github.com" },
-    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-    { icon: FileText, label: t("contact.resume"), href: "#" },
+    { 
+      icon: Mail, 
+      label: t("contact.email"), 
+      href: "mailto:rosella.astrain@gmail.com",
+      external: false // Opens email client
+    },
+    { 
+      icon: Github, 
+      label: "GitHub", 
+      href: "https://github.com/RosellaAM",
+      external: true 
+    },
+    { 
+      icon: Linkedin, 
+      label: "LinkedIn", 
+      href: "https://www.linkedin.com/in/maria-rosella-astrain/",
+      external: true 
+    },
+    { 
+      icon: FileText, 
+      label: t("contact.resume"), 
+      href: language === "en" ? "/cv/Rosella_Astrain_CV_English.pdf" : "/cv/Rosella_Astrain_CV_Spanish.pdf",
+      external: false // Opens PDF in browser
+    },
   ];
 
   return (
@@ -23,9 +43,13 @@ const ContactSection = () => {
         </motion.div>
 
         <motion.div className="flex items-center justify-center gap-4 flex-wrap" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
-          {links.map(({ icon: Icon, label, href }) => (
+          {links.map(({ icon: Icon, label, href, external }) => (
             <TiltCard key={label} className="inline-block" intensity={12}>
-              <a href={href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border px-5 py-3 rounded-lg text-sm hover:border-primary hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 text-foreground bg-card">
+              <a 
+                href={href} 
+                {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})} 
+                className="inline-flex items-center gap-2 border border-border px-5 py-3 rounded-lg text-sm hover:border-primary hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 text-foreground bg-card"
+              >
                 <Icon className="w-4 h-4" />
                 {label}
               </a>
