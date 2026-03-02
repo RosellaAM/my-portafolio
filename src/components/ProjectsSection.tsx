@@ -8,37 +8,34 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const projects = [
   {
     id: "megaline",
-  title: "Megaline Plan Recommendation System",
-  description: "Classification system that analyzes customer usage patterns to recommend optimal mobile plans, achieving 88% accuracy. Helps customers find the right plan based on their actual behavior.",
-  fullDescription: "Developed a classification system that analyzes customer usage patterns (call minutes, data usage, text messages) to recommend the most suitable mobile plan. The model helps Megaline's customers migrate to plans that better fit their consumption patterns, improving satisfaction and reducing misaligned subscriptions.",
-  result: "88% Accuracy",
-  metrics: ["F1-Score: 0.86", "Precision: 0.87", "Recall: 0.85"],
-  tags: ["Python", "Scikit-learn", "Random Forest", "Streamlit", "Joblib"],
-  image: "/projects/megaline.jpg",
-  github: "https://github.com/RosellaAM/Megaline-Plan-Recommendation-System",
-  demo: "https://megaline-plans.streamlit.app/",
-  impact: "Customer Satisfaction | Plan Optimization | Usage-Based Recommendations"
+    title: "Megaline Plan Recommendation System",
+    description: "Classification system that analyzes customer usage patterns to recommend optimal mobile plans, achieving 88% accuracy. Helps customers find the right plan based on their actual behavior.",
+    fullDescription: "Developed a classification system that analyzes customer usage patterns (call minutes, data usage, text messages) to recommend the most suitable mobile plan. The model helps Megaline's customers migrate to plans that better fit their consumption patterns, improving satisfaction and reducing misaligned subscriptions.",
+    result: "88% accuracy on 2,500+ clients",
+    tags: ["Python", "Scikit-learn", "Random Forest", "Streamlit", "Joblib"],
+    image: "/projects/megaline.jpg",
+    github: "https://github.com/RosellaAM/Megaline-Plan-Recommendation-System",
+    demo: "https://megaline-plans.streamlit.app/",
+    impact: "Customer Satisfaction | Plan Optimization | Usage-Based Recommendations"
   },
   {
     id: "bank-churn",
     title: "Customer Churn Prediction - Beta Bank",
     description: "Machine learning model predicting customer churn with 87% AUC-ROC. Enables proactive retention strategies and optimized resource allocation.",
     fullDescription: "Beta Bank faces the challenge of gradually losing customers. This project develops a predictive model to identify customers with high probability of leaving, maximizing F1-score (0.593 exceeding target) with comprehensive performance evaluation.",
-    result: "F1: 0.593",
-    metrics: ["AUC-ROC: 0.87", "Precision: 87%", "Target Exceeded: 0.59"],
+    result: "87% AUC-ROC on 10K+ customers",
     tags: ["Python", "Scikit-learn", "XGBoost", "Pandas", "Matplotlib"],
     image: "/projects/bank-churn.jpg",
     github: "https://github.com/RosellaAM/Beta-Bank-Churn-Prediction",
     demo: "#",
-    impact: "Early Risk Identification | Retention Strategy Optimization | Chrun Prediction"
+    impact: "Early Risk Identification | Retention Strategy Optimization | Churn Prediction"
   },
   {
     id: "gold-recovery",
     title: "Gold Recovery Prediction Model",
     description: "Industrial ML solution predicting gold recovery rates with 12.82% sMAPE. Optimizes mineral processing through predictive modeling of purification stages.",
     fullDescription: "Machine learning solution for Zyfra that predicts gold recovery rates from raw ore during purification. Analyzes historical parameters to build predictive models for automated control systems, eliminating non-profitable parameters and maximizing yield.",
-    result: "12.82% sMAPE",
-    metrics: ["Rougher: 13.54%", "Final: 12.58%", "Validation: 12.45%"],
+    result: "12.82% sMAPE on 50K+ mining records",
     tags: ["Python", "Random Forest", "Pandas", "NumPy", "Seaborn"],
     image: "/projects/gold-recovery.jpg",
     github: "https://github.com/RosellaAM/Gold-Recovery-Prediction-Model",
@@ -50,8 +47,7 @@ const projects = [
     title: "Film Review Sentiment Analysis",
     description: "NLP system detecting negative movie reviews with 0.87 F1-score. Deployed for automated content filtering and community moderation.",
     fullDescription: "Natural language processing solution for Film Junky Union that automatically detects negative movie reviews from IMDB data. Implements multiple ML models for binary sentiment classification with rigorous evaluation.",
-    result: "F1: 0.87",
-    metrics: ["Accuracy: 86%", "Precision: 0.85", "Recall: 0.89"],
+    result: "87% F1-score on 50K+ IMDB reviews",
     tags: ["Python", "NLTK", "Scikit-learn", "TF-IDF", "XGBoost"],
     image: "/projects/sentiment.jpg",
     github: "https://github.com/RosellaAM/Movie-Review-Sentiment-Analysis",
@@ -63,10 +59,10 @@ const projects = [
     title: "Vehicle Data Explorer",
     description: "Interactive web application transforming complex vehicle data into intuitive visualizations. Deployed on Streamlit Cloud with Plotly dashboards.",
     fullDescription: "Interactive web application that transforms complex vehicle data into intuitive and actionable visualizations. Enables users of all skill levels to explore patterns, trends, and relationships in used vehicle datasets.",
-    result: "Live Demo",
-    metrics: ["Interactive Charts", "Real-time Filtering", "Cloud Deployed"],
+    result: "", // Empty string means no bubble will show
     tags: ["Python", "Streamlit", "Plotly", "Pandas", "NumPy"],
-    image: "https://github.com/RosellaAM/Vehicle-Data-Explorer",
+    image: "/projects/vehicle-explorer.jpg",
+    github: "https://github.com/RosellaAM/Vehicle-Data-Explorer",
     demo: "https://vehicle-data-explorer.streamlit.app/",
     impact: "Democratized Analytics | Interactive EDA | Production Deployment"
   }
@@ -153,17 +149,16 @@ const ProjectsSection = () => {
                     alt={project.title} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                   />
-                  <div className="absolute top-3 left-3 flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-mono font-medium border-primary shadow-none border text-primary bg-secondary/90 backdrop-blur-sm">
-                    <TrendingUp className="w-3.5 h-3.5" />
-                    {project.result}
-                  </div>
-                  <div className="absolute bottom-3 right-3 flex gap-1">
-                    {project.metrics.slice(0, 2).map((metric, idx) => (
-                      <span key={idx} className="text-[10px] font-mono px-2 py-1 rounded-full bg-background/80 backdrop-blur-sm border border-border text-foreground">
-                        {metric}
-                      </span>
-                    ))}
-                  </div>
+                  
+                  {/* Only show result bubble if project.result exists */}
+                  {project.result && (
+                    <div className="absolute top-3 left-3 flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-mono font-medium border-primary shadow-none border text-primary bg-secondary/90 backdrop-blur-sm">
+                      <TrendingUp className="w-3.5 h-3.5" />
+                      {project.result}
+                    </div>
+                  )}
+                  
+                  {/* Metrics bubbles REMOVED - only result bubble remains */}
                 </div>
                 
                 <div className="p-5 flex flex-col flex-1">
@@ -177,8 +172,8 @@ const ProjectsSection = () => {
                     {project.description}
                   </p>
                   
+                  {/* Business Impact label removed, but impact text remains with | format */}
                   <div className="mb-3">
-                    <p className="text-xs text-primary font-mono mb-1.5">Business Impact:</p>
                     <p className="text-xs text-muted-foreground">{project.impact}</p>
                   </div>
                   
