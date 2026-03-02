@@ -26,9 +26,12 @@ const HeroSection = () => {
           <div className="relative w-40 h-40 md:w-48 md:h-48 mx-auto">
             <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary/60 via-primary/20 to-transparent blur-sm" />
             <Avatar className="w-full h-full relative border-2 border-primary/30 shadow-2xl shadow-primary/10">
-              <AvatarImage src="/profile-photo.jpg" alt="Rosella Astrain" className="object-cover" />
+              {/* CHANGE THIS LINE - update with your photo path */}
+              <AvatarImage src="/profile/rosella-profile.jpg" alt="Rosella Astrain" className="object-cover" />
+              
+              {/* This shows if image fails to load */}
               <AvatarFallback className="text-4xl font-bold bg-primary/5 text-primary">
-                <Mail className="w-10 h-10 text-primary/40" />
+                RA
               </AvatarFallback>
             </Avatar>
           </div>
@@ -52,9 +55,15 @@ const HeroSection = () => {
             <ArrowDown className="w-4 h-4" />
           </a>
           <div className="flex items-center gap-3 ml-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github className="w-5 h-5" /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin className="w-5 h-5" /></a>
-            <a href="mailto:hello@example.com" className="text-muted-foreground hover:text-primary transition-colors"><Mail className="w-5 h-5" /></a>
+            <a href="https://github.com/RosellaAM" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Github className="w-5 h-5" />
+            </a>
+            <a href="https://linkedin.com/in/rosella-astrain" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a href="mailto:rosella.astrain@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+              <Mail className="w-5 h-5" />
+            </a>
           </div>
         </motion.div>
       </div>
