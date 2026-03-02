@@ -13,7 +13,7 @@ const projects = [
     fullDescription: "Developed a classification system that analyzes customer usage patterns (call minutes, data usage, text messages) to recommend the most suitable mobile plan. The model helps Megaline's customers migrate to plans that better fit their consumption patterns, improving satisfaction and reducing misaligned subscriptions.",
     result: "88% accuracy on 2,500+ clients",
     tags: ["Python", "Scikit-learn", "Random Forest", "Streamlit", "Joblib"],
-    image: "/projects/megaline.jpg",
+    image: "/projects/megaline.png", // Changed to .png
     github: "https://github.com/RosellaAM/Megaline-Plan-Recommendation-System",
     demo: "https://megaline-plans.streamlit.app/",
     impact: "Customer Satisfaction | Plan Optimization | Usage-Based Recommendations"
@@ -25,7 +25,7 @@ const projects = [
     fullDescription: "Beta Bank faces the challenge of gradually losing customers. This project develops a predictive model to identify customers with high probability of leaving, maximizing F1-score (0.593 exceeding target) with comprehensive performance evaluation.",
     result: "87% AUC-ROC on 10K+ customers",
     tags: ["Python", "Scikit-learn", "XGBoost", "Pandas", "Matplotlib"],
-    image: "/projects/bank-churn.jpg",
+    image: "/projects/bank-churn.png", // Changed to .png
     github: "https://github.com/RosellaAM/Beta-Bank-Churn-Prediction",
     demo: "#",
     impact: "Early Risk Identification | Retention Strategy Optimization | Churn Prediction"
@@ -37,7 +37,7 @@ const projects = [
     fullDescription: "Machine learning solution for Zyfra that predicts gold recovery rates from raw ore during purification. Analyzes historical parameters to build predictive models for automated control systems, eliminating non-profitable parameters and maximizing yield.",
     result: "12.82% sMAPE on 50K+ mining records",
     tags: ["Python", "Random Forest", "Pandas", "NumPy", "Seaborn"],
-    image: "/projects/gold-recovery.jpg",
+    image: "/projects/gold-recovery.png", // Changed to .png
     github: "https://github.com/RosellaAM/Gold-Recovery-Prediction-Model",
     demo: "#",
     impact: "Process Optimization | Resource Efficiency | Sustainable Mining"
@@ -49,7 +49,7 @@ const projects = [
     fullDescription: "Natural language processing solution for Film Junky Union that automatically detects negative movie reviews from IMDB data. Implements multiple ML models for binary sentiment classification with rigorous evaluation.",
     result: "87% F1-score on 50K+ IMDB reviews",
     tags: ["Python", "NLTK", "Scikit-learn", "TF-IDF", "XGBoost"],
-    image: "/projects/sentiment.jpg",
+    image: "/projects/sentiment.png", // Changed to .png
     github: "https://github.com/RosellaAM/Movie-Review-Sentiment-Analysis",
     demo: "#",
     impact: "Content Filtering | Automated Moderation | Sentiment Insights"
@@ -61,7 +61,7 @@ const projects = [
     fullDescription: "Interactive web application that transforms complex vehicle data into intuitive and actionable visualizations. Enables users of all skill levels to explore patterns, trends, and relationships in used vehicle datasets.",
     result: "", // Empty string means no bubble will show
     tags: ["Python", "Streamlit", "Plotly", "Pandas", "NumPy"],
-    image: "/projects/vehicle-explorer.jpg",
+    image: "/projects/vehicle-explorer.png", // Changed to .png
     github: "https://github.com/RosellaAM/Vehicle-Data-Explorer",
     demo: "https://vehicle-data-explorer.streamlit.app/",
     impact: "Democratized Analytics | Interactive EDA | Production Deployment"
