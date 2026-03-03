@@ -112,6 +112,7 @@ const ProjectsSection = () => {
         >
           {projects.map((project, i) => {
             const resultText = t(`project.${project.id}.result`);
+            const hasDemo = project.demo !== "#";
             
             return (
               <motion.div 
@@ -168,19 +169,31 @@ const ProjectsSection = () => {
                       ))}
                     </div>
                     
+                    {/* Conditional button rendering */}
                     <div className="flex gap-2 mt-auto">
-                      <Button asChild variant="default" size="sm" className="flex-1">
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
-                          <Github className="w-4 h-4 mr-1" />
-                          {t("projects.github")}
-                        </a>
-                      </Button>
-                      <Button asChild variant="outline" size="sm" className="flex-1">
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-4 h-4 mr-1" />
-                          {project.demo !== "#" ? t("projects.demo") : "Details"}
-                        </a>
-                      </Button>
+                      {hasDemo ? (
+                        <>
+                          <Button asChild variant="default" size="sm" className="flex-1">
+                            <a href={project.github} target="_blank" rel="noopener noreferrer">
+                              <Github className="w-4 h-4 mr-1" />
+                              {t("projects.github")}
+                            </a>
+                          </Button>
+                          <Button asChild variant="outline" size="sm" className="flex-1">
+                            <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="w-4 h-4 mr-1" />
+                              {t("projects.demo")}
+                            </a>
+                          </Button>
+                        </>
+                      ) : (
+                        <Button asChild variant="default" size="sm" className="w-full">
+                          <a href={project.github} target="_blank" rel="noopener noreferrer">
+                            <Github className="w-4 h-4 mr-1" />
+                            {t("projects.github")}
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </TiltCard>
