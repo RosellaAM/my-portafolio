@@ -35,7 +35,7 @@ const projects = [
     tags: ["Python", "NLTK", "Scikit-learn", "TF-IDF", "XGBoost"],
     image: "/projects/sentiment.png",
     github: "https://github.com/RosellaAM/Movie-Review-Sentiment-Analysis",
-    demo: "#",
+    demo: "https://notebook-display--rosellaastrain.replit.app/",
     impact: "Content Filtering | Automated Moderation | Sentiment Insights"
   },
   {
