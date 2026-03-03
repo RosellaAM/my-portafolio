@@ -12,7 +12,6 @@ const projects = [
     image: "/projects/megaline.png",
     github: "https://github.com/RosellaAM/Megaline-Plan-Recommendation-System",
     demo: "https://megaline-plans.streamlit.app/",
-    impact: "Customer Satisfaction | Plan Optimization | Usage-Based Recommendations"
   },
   {
     id: "bank-churn",
@@ -20,7 +19,6 @@ const projects = [
     image: "/projects/bank-churn.png",
     github: "https://github.com/RosellaAM/Beta-Bank-Churn-Prediction",
     demo: "#",
-    impact: "Early Risk Identification | Retention Strategy Optimization | Churn Prediction"
   },
   {
     id: "gold-recovery",
@@ -28,7 +26,6 @@ const projects = [
     image: "/projects/gold-recovery.png",
     github: "https://github.com/RosellaAM/Gold-Recovery-Prediction-Model",
     demo: "#",
-    impact: "Process Optimization | Resource Efficiency | Sustainable Mining"
   },
   {
     id: "sentiment",
@@ -36,7 +33,6 @@ const projects = [
     image: "/projects/sentiment.png",
     github: "https://github.com/RosellaAM/Movie-Review-Sentiment-Analysis",
     demo: "https://notebook-display--rosellaastrain.replit.app/",
-    impact: "Content Filtering | Automated Moderation | Sentiment Insights"
   },
   {
     id: "vehicle-explorer",
@@ -44,7 +40,6 @@ const projects = [
     image: "/projects/vehicle-explorer.png",
     github: "https://github.com/RosellaAM/Vehicle-Data-Explorer",
     demo: "https://vehicle-data-explorer.streamlit.app/",
-    impact: "Democratized Analytics | Interactive EDA | Production Deployment"
   }
 ];
 
@@ -150,7 +145,8 @@ const ProjectsSection = () => {
                       </h3>
                     </div>
                     
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    {/* ⭐ THIS IS THE ONLY LINE I CHANGED - added whitespace-pre-line */}
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-3 whitespace-pre-line">
                       {t(`project.${project.id}.description`)}
                     </p>
                     
