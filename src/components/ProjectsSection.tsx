@@ -145,14 +145,12 @@ const ProjectsSection = () => {
                       </h3>
                     </div>
                     
-                    {/* ⭐ THIS IS THE ONLY LINE I CHANGED - added whitespace-pre-line */}
+                    {/* Project description with line breaks */}
                     <p className="text-sm text-muted-foreground leading-relaxed mb-3 whitespace-pre-line">
                       {t(`project.${project.id}.description`)}
                     </p>
                     
-                    <div className="mb-3">
-                      <p className="text-xs text-muted-foreground">{project.impact}</p>
-                    </div>
+                    {/* IMPACT SECTION REMOVED */}
                     
                     <div className="flex flex-wrap gap-1.5 mb-4">
                       {project.tags.map((tag) => (
