@@ -16,117 +16,117 @@ const translations: Record<string, Record<Language, string>> = {
   "nav.contact": { en: "Contact", es: "Contacto" },
   "nav.language": { en: "Language", es: "Idioma" },
 
-  // Hero
-  "hero.role": { en: "DATA SCIENTIST & BI ANALYST", es: "CIENTÍFICA DE DATOS & ANALISTA BI" },
+  // Hero - Clear, impactful, non-technical
+  "hero.role": { en: "DATA SCIENTIST & ANALYTICS PROFESSIONAL", es: "CIENTÍFICA DE DATOS & ANALISTA" },
   "hero.description": {
-    en: "I build machine learning models, analyze complex datasets, and create data-driven solutions that make an impact. Passionate about uncovering patterns hidden in data.",
-    es: "Desarrollo modelos de machine learning, analizo datos complejos y creo soluciones basadas en datos que generan impacto real. Apasionada por descubrir patrones ocultos en la información y convertirlos en oportunidades de negocio.",
+    en: "I turn complex data into clear business solutions. Using machine learning and analytics, I help companies understand their customers, optimize operations, and make smarter decisions.",
+    es: "Convierto datos complejos en soluciones claras para el negocio. Uso machine learning y analítica para ayudar a empresas a entender sus clientes, optimizar operaciones y tomar mejores decisiones.",
   },
-  "hero.viewProjects": { en: "View Projects", es: "Ver Proyectos" },
+  "hero.viewProjects": { en: "View My Work", es: "Ver Mi Trabajo" },
 
-  // About
+  // About - Professional but accessible
   "about.subtitle": { en: "Who I Am", es: "Quién Soy" },
   "about.title": { en: "About Me", es: "Sobre Mí" },
   "about.description": {
-    en: "I'm a results-driven Data Professional with hands on experience in data science and analytics, from developing end-to-end machine learning pipelines to extracting actionable insights through exploratory analysis and data visualization. I combine technical expertise in Python, SQL, and predictive modeling with a strategic mindset to transform complex data into business solutions. I specialize in building interactive dashboards and telling compelling data stories that bridge the gap between technical findings and strategic decision-making. My goal is to deliver immediate, measurable value by leveraging advanced analytics and data science to drive impact from day one.",
-    es: "Soy una profesional de datos orientada a resultados con experiencia práctica en ciencia de datos y analítica. Mi trabajo abarca desde el desarrollo de pipelines completos de machine learning hasta la extracción de insights accionables mediante análisis exploratorio y visualización de datos. Combino conocimientos técnicos en Python, SQL y modelado predictivo con una visión estratégica para transformar datos complejos en soluciones de negocio concretas. Me especializo en crear dashboards interactivos y contar historias con datos que conectan los hallazgos técnicos con la toma de decisiones estratégicas. Mi objetivo es generar valor inmediato y medible desde el primer día, aplicando analítica avanzada y ciencia de datos para impulsar resultados que realmente importan al negocio.",
+    en: "I'm a data professional who bridges the gap between technical analysis and business strategy. I help organizations make sense of their data—whether that's predicting customer behavior, improving operational efficiency, or uncovering new opportunities.\n\nMy approach combines strong technical skills (Python, SQL, machine learning) with a focus on real-world results. I don't just build models; I build solutions that answer specific business questions and drive measurable impact.\n\nI specialize in making data understandable and actionable for everyone, from technical teams to executive leadership.",
+    es: "Soy una profesional de datos que conecta el análisis técnico con la estrategia de negocio. Ayudo a las organizaciones a dar sentido a sus datos—ya sea prediciendo el comportamiento de clientes, mejorando la eficiencia operativa, o descubriendo nuevas oportunidades.\n\nMi enfoque combina sólidas habilidades técnicas (Python, SQL, machine learning) con un enfoque en resultados del mundo real. No solo construyo modelos; construyo soluciones que responden preguntas específicas del negocio y generan impacto medible.\n\nMe especializo en hacer que los datos sean comprensibles y accionables para todos, desde equipos técnicos hasta liderazgo ejecutivo.",
   },
 
   // Skills
-  "skills.subtitle": { en: "Tech Stack", es: "Stack Tecnológico" },
-  "skills.title": { en: "Skills & Tools", es: "Habilidades y Herramientas" },
-  "skills.languages": { en: "Languages", es: "Lenguajes" },
-  "skills.mlai": { en: "ML & AI", es: "ML & IA" },
-  "skills.datatools": { en: "Data Tools", es: "Herramientas de Datos" },
+  "skills.subtitle": { en: "What I Bring", es: "Lo Que Ofrezco" },
+  "skills.title": { en: "Skills & Expertise", es: "Habilidades y Experiencia" },
+  "skills.languages": { en: "Programming", es: "Programación" },
+  "skills.mlai": { en: "Machine Learning", es: "Machine Learning" },
+  "skills.datatools": { en: "Data Processing", es: "Procesamiento de Datos" },
   "skills.visualization": { en: "Visualization", es: "Visualización" },
   "skills.deployment": { en: "Deployment", es: "Despliegue" },
 
   // Projects Section
-  "projects.subtitle": { en: "Portfolio", es: "Portafolio" },
+  "projects.subtitle": { en: "My Work", es: "Mi Trabajo" },
   "projects.title": { en: "Featured Projects", es: "Proyectos Destacados" },
-  "projects.github": { en: "GitHub", es: "GitHub" },
+  "projects.github": { en: "View Code", es: "Ver Código" },
   "projects.demo": { en: "Live Demo", es: "Demo en Vivo" },
 
-  // MEGALINE PROJECT
+  // MEGALINE PROJECT - Story format
   "project.megaline.title": { 
-    en: "Megaline Plan Recommendation System", 
-    es: "Sistema de Recomendación de Planes Megaline" 
+    en: "Mobile Plan Recommendation System", 
+    es: "Sistema de Recomendación de Planes Móviles" 
   },
   "project.megaline.description": {
-    en: "Classification system that analyzes customer usage patterns to recommend optimal mobile plans, achieving 88% accuracy. Helps customers find the right plan based on their actual behavior.",
-    es: "Sistema de clasificación que analiza patrones de uso de clientes para recomendar planes móviles óptimos, alcanzando 88% de precisión. Ayuda a los clientes a encontrar el plan adecuado según su comportamiento real.",
+    en: "**The Challenge:** A telecom company wanted to help customers find the right mobile plan. Many were overpaying or under-using their plans, leading to dissatisfaction.\n\n**What I Did:** I built a machine learning system that analyzes customer usage patterns (calls, data, texts) and recommends the optimal plan for their needs.\n\n**The Result:** 88% accuracy in matching customers to the right plan, helping 2,500+ clients get better value while improving customer satisfaction.",
+    es: "**El Desafío:** Una empresa de telecomunicaciones quería ayudar a sus clientes a encontrar el plan móvil adecuado. Muchos estaban pagando de más o usando menos de lo que pagaban, generando insatisfacción.\n\n**Mi Solución:** Construí un sistema de machine learning que analiza patrones de uso (llamadas, datos, mensajes) y recomienda el plan óptimo para cada cliente.\n\n**El Resultado:** 88% de precisión recomendando el plan correcto, ayudando a más de 2,500 clientes a obtener mejor valor y aumentando la satisfacción.",
   },
   "project.megaline.result": { 
-    en: "88% accuracy on 2,500+ clients", 
-    es: "88% precisión en 2,500+ clientes" 
+    en: "88% accuracy • 2,500+ clients helped", 
+    es: "88% precisión • 2,500+ clientes ayudados" 
   },
 
-  // BANK CHURN PROJECT
+  // BANK CHURN PROJECT - Story format
   "project.bank-churn.title": { 
-    en: "Customer Churn Prediction - Beta Bank", 
-    es: "Predicción de Abandono - Beta Bank" 
+    en: "Customer Retention Analytics", 
+    es: "Analítica de Retención de Clientes" 
   },
   "project.bank-churn.description": {
-    en: "Machine learning model predicting customer churn with 87% AUC-ROC. Enables proactive retention strategies and optimized resource allocation.",
-    es: "Modelo de machine learning que predice abandono de clientes con 87% AUC-ROC. Permite estrategias proactivas de retención y asignación optimizada de recursos.",
+    en: "**The Challenge:** A bank was losing customers month after month without understanding why. They needed to identify at-risk clients before they left.\n\n**What I Did:** I developed a predictive model that analyzes customer behavior patterns to flag those likely to leave, giving the retention team time to act.\n\n**The Result:** 87% accuracy in predicting churn across 10,000+ customers, enabling targeted retention efforts and helping keep valuable clients.",
+    es: "**El Desafío:** Un banco estaba perdiendo clientes mes tras mes sin entender por qué. Necesitaban identificar clientes en riesgo antes de que se fueran.\n\n**Mi Solución:** Desarrollé un modelo predictivo que analiza patrones de comportamiento para señalar clientes propensos a irse, dando tiempo al equipo de retención para actuar.\n\n**El Resultado:** 87% de precisión prediciendo abandono en más de 10,000 clientes, permitiendo esfuerzos de retención específicos y ayudando a mantener clientes valiosos.",
   },
   "project.bank-churn.result": { 
-    en: "87% AUC-ROC on 10K+ customers", 
-    es: "87% AUC-ROC en 10K+ clientes" 
+    en: "87% accuracy • 10,000+ customers analyzed", 
+    es: "87% precisión • 10,000+ clientes analizados" 
   },
 
-  // GOLD RECOVERY PROJECT
+  // GOLD RECOVERY PROJECT - Story format
   "project.gold-recovery.title": { 
-    en: "Gold Recovery Prediction Model", 
-    es: "Modelo de Predicción de Recuperación de Oro" 
+    en: "Mining Process Optimization", 
+    es: "Optimización de Procesos Mineros" 
   },
   "project.gold-recovery.description": {
-    en: "Industrial ML solution predicting gold recovery rates with 12.82% sMAPE. Optimizes mineral processing through predictive modeling of purification stages.",
-    es: "Solución ML industrial que predice tasas de recuperación de oro con 12.82% sMAPE. Optimiza el procesamiento mineral mediante modelado predictivo de etapas de purificación.",
+    en: "**The Challenge:** A mining company wanted to maximize gold extraction while reducing energy costs. They needed to predict recovery rates at each stage of purification.\n\n**What I Did:** I built a machine learning model that analyzes operational data to predict gold recovery throughout the purification process, identifying opportunities for improvement.\n\n**The Result:** 12.82% error rate across 50,000+ mining records, helping optimize energy use and increase gold yield—saving costs while improving production.",
+    es: "**El Desafío:** Una empresa minera quería maximizar la extracción de oro reduciendo costos de energía. Necesitaban predecir tasas de recuperación en cada etapa de purificación.\n\n**Mi Solución:** Construí un modelo de machine learning que analiza datos operacionales para predecir la recuperación de oro durante el proceso de purificación, identificando oportunidades de mejora.\n\n**El Resultado:** 12.82% de error en más de 50,000 registros mineros, ayudando a optimizar uso de energía y aumentar rendimiento—ahorrando costos mientras mejoraba producción.",
   },
   "project.gold-recovery.result": { 
-    en: "12.82% sMAPE on 50K+ mining records", 
-    es: "12.82% sMAPE en 50K+ registros mineros" 
+    en: "12.82% error rate • 50,000+ records", 
+    es: "12.82% tasa de error • 50,000+ registros" 
   },
 
-  // SENTIMENT ANALYSIS PROJECT
+  // SENTIMENT ANALYSIS PROJECT - Story format
   "project.sentiment.title": { 
-    en: "Film Review Sentiment Analysis", 
-    es: "Análisis de Sentimientos de Reseñas de Cine" 
+    en: "Movie Review Analysis", 
+    es: "Análisis de Reseñas de Cine" 
   },
   "project.sentiment.description": {
-    en: "NLP system detecting negative movie reviews with 0.87 F1-score. Deployed for automated content filtering and community moderation.",
-    es: "Sistema NLP que detecta reseñas negativas de películas con 0.87 F1-score. Desplegado para filtrado automático y moderación comunitaria.",
+    en: "**The Challenge:** A film community needed to automatically identify negative reviews to help moderate discussions and understand audience sentiment.\n\n**What I Did:** I created an NLP system that reads movie reviews and determines if they're positive or negative, learning from thousands of examples.\n\n**The Result:** 87% accuracy in detecting negative reviews across 50,000+ IMDB reviews, enabling automated content filtering and deeper insights into audience opinions.",
+    es: "**El Desafío:** Una comunidad de cine necesitaba identificar automáticamente reseñas negativas para moderar discusiones y entender el sentimiento de la audiencia.\n\n**Mi Solución:** Creé un sistema NLP que lee reseñas de películas y determina si son positivas o negativas, aprendiendo de miles de ejemplos.\n\n**El Resultado:** 87% de precisión detectando reseñas negativas en más de 50,000 reseñas de IMDB, permitiendo filtrado automático y mejores insights sobre opiniones de la audiencia.",
   },
   "project.sentiment.result": { 
-    en: "87% F1-score on 50K+ IMDB reviews", 
-    es: "87% F1-score en 50K+ reseñas de IMDB" 
+    en: "87% accuracy • 50,000+ reviews analyzed", 
+    es: "87% precisión • 50,000+ reseñas analizadas" 
   },
 
-  // VEHICLE EXPLORER PROJECT
+  // VEHICLE EXPLORER PROJECT - Story format
   "project.vehicle-explorer.title": { 
-    en: "Vehicle Data Explorer", 
-    es: "Explorador de Datos de Vehículos" 
+    en: "Vehicle Data Visualization Tool", 
+    es: "Visualizador de Datos de Vehículos" 
   },
   "project.vehicle-explorer.description": {
-    en: "Interactive web application transforming complex vehicle data into intuitive visualizations. Deployed on Streamlit Cloud with Plotly dashboards.",
-    es: "Aplicación web interactiva que transforma datos complejos de vehículos en visualizaciones intuitivas. Desplegado en Streamlit Cloud con dashboards de Plotly.",
+    en: "**The Challenge:** Complex vehicle data is hard to explore and understand without technical skills. Dealers and analysts needed an easy way to spot trends and patterns.\n\n**What I Did:** I built an interactive web app that lets anyone explore vehicle data through intuitive charts and filters—no coding required.\n\n**The Result:** A live dashboard where users can filter, sort, and visualize vehicle data instantly, making data exploration accessible to everyone.",
+    es: "**El Desafío:** Los datos complejos de vehículos son difíciles de explorar sin habilidades técnicas. Concesionarios y analistas necesitaban una forma fácil de ver tendencias y patrones.\n\n**Mi Solución:** Construí una aplicación web interactiva que permite a cualquiera explorar datos de vehículos a través de gráficos intuitivos y filtros—sin necesidad de programar.\n\n**El Resultado:** Un dashboard en vivo donde los usuarios pueden filtrar, ordenar y visualizar datos de vehículos al instante, haciendo la exploración de datos accesible para todos.",
   },
   "project.vehicle-explorer.result": { 
-    en: "", 
-    es: "" 
+    en: "Live demo • Interactive dashboards", 
+    es: "Demo en vivo • Dashboards interactivos" 
   },
 
-  // Contact
-  "contact.subtitle": { en: "Get In Touch", es: "Contáctame" },
-  "contact.title": { en: "Let's Work Together", es: "Trabajemos Juntos" },
+  // Contact - Friendly and approachable
+  "contact.subtitle": { en: "Let's Connect", es: "Conectemos" },
+  "contact.title": { en: "Interested in Working Together?", es: "¿Interesado en Trabajar Juntos?" },
   "contact.description": {
-    en: "Interested in collaborating on a data science project or have a role that fits? I'd love to hear from you.",
-    es: "¿Interesado en colaborar en un proyecto de ciencia de datos o tienes un rol que encaje? Me encantaría saber de ti.",
+    en: "Whether you have a specific role in mind, a project idea, or just want to chat about data—I'd love to hear from you.",
+    es: "Ya sea que tengas un rol específico en mente, una idea de proyecto, o solo quieras conversar sobre datos—me encantaría saber de ti.",
   },
-  "contact.email": { en: "Email", es: "Correo" },
-  "contact.resume": { en: "Resume", es: "Currículum" },
-  "contact.footer": { en: "Built with passion for data", es: "Construido con pasión por los datos" },
+  "contact.email": { en: "Email Me", es: "Enviar Correo" },
+  "contact.resume": { en: "View Resume", es: "Ver Currículum" },
+  "contact.footer": { en: "Built with curiosity and care", es: "Construido con curiosidad y dedicación" },
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
