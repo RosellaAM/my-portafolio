@@ -1,73 +1,71 @@
-# Welcome to your Lovable project
+# Rosella Astrain | Data Science Portfolio
 
-## Project info
+Personal portfolio website showcasing my data science and machine learning projects. Built with modern web technologies and fully customized from an initial template.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Live Site
+[View Portfolio](https://your-netlify-url.netlify.app) <!-- Add your actual Netlify URL here -->
 
-## How can I edit this code?
+## 📁 Featured Projects
 
-There are several ways of editing your application.
+### 🤖 Megaline Plan Recommendation System
+Telecom customer segmentation and plan recommendation system achieving 88% accuracy. Analyzes usage patterns to recommend optimal mobile plans.
+- **Tags**: Python, Scikit-learn, Random Forest, Streamlit, Joblib
+- [GitHub Repo](https://github.com/RosellaAM/Megaline-Plan-Recommendation-System)
+- [Live Demo](https://megaline-plans.streamlit.app/)
 
-**Use Lovable**
+### 🏦 Beta Bank Churn Prediction
+Machine learning model predicting customer churn with 87% AUC-ROC. Enables proactive retention strategies and optimized resource allocation.
+- **Tags**: Python, Scikit-learn, XGBoost, Pandas, Matplotlib
+- [GitHub Repo](https://github.com/RosellaAM/Beta-Bank-Churn-Prediction)
+- [View Notebook](https://nbviewer.org/github/RosellaAM/Beta-Bank-Churn-Prediction/blob/main/notebook.ipynb)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### ⛏️ Gold Recovery Prediction Model
+Industrial ML solution predicting gold recovery rates with 12.82% sMAPE. Optimizes mineral processing through predictive modeling of purification stages.
+- **Tags**: Python, Random Forest, Pandas, NumPy, Seaborn
+- [GitHub Repo](https://github.com/RosellaAM/Gold-Recovery-Prediction-Model)
+- [View Notebook](https://nbviewer.org/github/RosellaAM/Gold-Recovery-Prediction-Model/blob/main/notebook.ipynb)
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🎬 Film Review Sentiment Analysis
+NLP system detecting negative movie reviews with 0.87 F1-score. Deployed for automated content filtering and community moderation.
+- **Tags**: Python, NLTK, Scikit-learn, TF-IDF, XGBoost
+- [GitHub Repo](https://github.com/RosellaAM/Movie-Review-Sentiment-Analysis)
+- [Live Demo](https://notebook-display--rosellaastrain.replit.app/)
 
-**Use your preferred IDE**
+### 🚗 Vehicle Data Explorer
+Interactive web application transforming complex vehicle data into intuitive visualizations. Deployed on Streamlit Cloud with Plotly dashboards.
+- **Tags**: Python, Streamlit, Plotly, Pandas, NumPy
+- [GitHub Repo](https://github.com/RosellaAM/Vehicle-Data-Explorer)
+- [Live Demo](https://vehicle-data-explorer.streamlit.app/)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Skills & Technologies
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Data Science & ML
+- **Languages**: Python, SQL, TypeScript, JavaScript
+- **ML Frameworks**: Scikit-learn, XGBoost, Random Forest, NLTK
+- **Data Analysis**: Pandas, NumPy, Matplotlib, Seaborn, Plotly
+- **Tools**: Jupyter Notebooks, Streamlit, FastAPI, Joblib
 
-Follow these steps:
+### Web Development
+- **Frontend**: React, TypeScript, Tailwind CSS, Framer Motion
+- **Build Tools**: Vite, npm
+- **UI Libraries**: shadcn/ui, Lucide Icons
+- **Deployment**: Netlify, Vercel, Streamlit Cloud
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### AI-Assisted Development
+- **Lovable AI**: Used for initial project scaffolding and bootstrapping
+- **AI Collaboration**: Experience working with AI tools to accelerate development while maintaining full control over customization and implementation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 💻 Local Development
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Clone the repository
+git clone https://github.com/RosellaAM/my-data-showcase-73.git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Navigate to project directory
+cd my-data-showcase-73
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
