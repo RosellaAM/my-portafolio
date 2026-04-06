@@ -14,6 +14,13 @@ const projects = [
     demo: "https://megaline-plans.streamlit.app/",
   },
   {
+    id: "fashion-retail",
+    tags: ["PowerBI", "DAX", "Power Query", "Story Telling"],
+    image: "/projects/fashion-retail.png",
+    github: "https://github.com/RosellaAM/global-fashion-retail-analytics",
+    demo: "#",
+  },
+  {
     id: "bank-churn",
     tags: ["Python", "Scikit-learn", "XGBoost", "Pandas", "Matplotlib"],
     image: "/projects/bank-churn.png",
